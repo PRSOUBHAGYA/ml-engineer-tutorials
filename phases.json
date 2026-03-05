@@ -1,0 +1,206 @@
+{
+    "Phase 1: Intuition": [
+        {
+            "id": "p1_c1", 
+            "title": "1.1 What is a Neural Network?", 
+            "url": "https://www.youtube.com/watch?v=aircAruvnKk", 
+            "goal": "Understand how artificial neurons process signals.",
+            "quiz": [
+                {"q": "What is the biological inspiration for NN?", "options": ["Brain Cells", "Muscle Fibers", "Skin"], "a": "Brain Cells"},
+                {"q": "What is the basic unit of a NN?", "options": ["Pixel", "Neuron", "Vector"], "a": "Neuron"},
+                {"q": "NNs excel at what task?", "options": ["Pattern Recognition", "Storing Files", "Web Browsing"], "a": "Pattern Recognition"},
+                {"q": "What is 'Deep' in Deep Learning?", "options": ["Hard Math", "Many Layers", "Old History"], "a": "Many Layers"},
+                {"q": "A simple neuron has...", "options": ["Inputs & Outputs", "Only Inputs", "No Math"], "a": "Inputs & Outputs"}
+            ]
+        },
+        {
+            "id": "p1_c2", 
+            "title": "1.2 Gradient descent, how neural networks learn?", 
+            "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w", 
+            "goal": "Visualize the 'valley' of loss and weight updates.",
+            "quiz": [
+                {"q": "Gradient Descent is used to...", "options": ["Minimize Loss", "Increase Speed", "Render Images"], "a": "Minimize Loss"},
+                {"q": "What represents the 'direction' to move?", "options": ["The Slope", "The Color", "The Name"], "a": "The Slope"},
+                {"q": "What determines step size?", "options": ["Learning Rate", "Batch Size", "Epochs"], "a": "Learning Rate"},
+                {"q": "We want to reach the...", "options": ["Global Minimum", "Mountain Peak", "Starting Point"], "a": "Global Minimum"},
+                {"q": "If slope is positive, we move...", "options": ["Left", "Right", "Up"], "a": "Left"}
+            ]
+        },
+        {
+            "id": "p1_c3", "title": "1.3 What is backpropagation really doing?",
+            "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U", 
+            "goal": "Learn how to quantify 'error' mathematically.",
+            "quiz": [
+                {"q": "What does a Cost Function measure?", "options": ["Accuracy", "Model Error", "Training Speed"], "a": "Model Error"},
+                {"q": "Common cost function for regression?", "options": ["MSE", "Cross-Entropy", "ReLU"], "a": "MSE"},
+                {"q": "Goal of training is to make Cost...", "options": ["Zero (or minimum)", "Infinite", "One"], "a": "Zero (or minimum)"},
+                {"q": "MSE stands for Mean ___ Error.", "options": ["Squared", "Simple", "Standard"], "a": "Squared"},
+                {"q": "Cost function acts as a ___ for the model.", "options": ["Guide", "Battery", "Filter"], "a": "Guide"}
+            ]
+        },
+        {
+            "id": "p1_c4", "title": "1.4 Backpropagation calculus", 
+            "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8", 
+            "goal": "Introduction to how errors flow backward through a network.",
+            "quiz": [
+                {"q": "Backpropagation is based on which rule?", "options": ["Chain Rule", "Power Rule", "Product Rule"], "a": "Chain Rule"},
+                {"q": "What is being updated during backprop?", "options": ["Weights", "Inputs", "Labels"], "a": "Weights"},
+                {"q": "Backprop flows from...", "options": ["Output to Input", "Input to Output", "Middle to Ends"], "a": "Output to Input"},
+                {"q": "We use backprop to calculate ___.", "options": ["Gradients", "Predictions", "Loss"], "a": "Gradients"},
+                {"q": "Backprop helps find the ___ of the cost function.", "options": ["Derivative", "Average", "Square Root"], "a": "Derivative"}
+            ]
+        },
+        {
+            "id": "p1_c5", "title": "1.5 Large Language Models explained briefly", 
+            "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs", 
+            "goal": "Deep dive into the chain rule and complex networks.",
+            "quiz": [
+                {"q": "Multiple layers require ___ applications of chain rule.", "options": ["Nested", "Single", "Zero"], "a": "Nested"},
+                {"q": "Hidden layers learn ___ representations.", "options": ["Feature", "Static", "Random"], "a": "Feature"},
+                {"q": "Vanishing gradient happens when layers are too ___.", "options": ["Deep", "Wide", "Small"], "a": "Deep"},
+                {"q": "A gradient of zero means weights ___.", "options": ["Stop updating", "Update faster", "Explode"], "a": "Stop updating"},
+                {"q": "Backprop is an ___ process.", "options": ["Iterative", "Instant", "Manual"], "a": "Iterative"}
+            ]
+        },
+        {
+            "id": "p1_c6", "title": "1.6 Transformers, the tech behind LLMs", 
+            "url": "https://www.youtube.com/watch?v=wjZofJX0v4M", 
+            "goal": "Essential derivatives for optimization.",
+            "quiz": [
+                {"q": "Derivative of x^2 is...", "options": ["2x", "x", "1"], "a": "2x"},
+                {"q": "Derivative measures the rate of ___.", "options": ["Change", "Storage", "Volume"], "a": "Change"},
+                {"q": "Partial derivatives are used for ___ variables.", "options": ["Multiple", "Single", "Zero"], "a": "Multiple"},
+                {"q": "The slope of a flat line is ___.", "options": ["0", "1", "Infinity"], "a": "0"},
+                {"q": "Calculus helps us 'step' ___ the slope.", "options": ["Down", "Up", "Sideways"], "a": "Down"}
+            ]
+        },
+        {
+            "id": "p1_c7", "title": "1.7 Attention in transformers, step-by-step", 
+            "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc", 
+            "goal": "Matrix multiplication and tensor basics.",
+            "quiz": [
+                {"q": "A 1D array in ML is a ___.", "options": ["Vector", "Matrix", "Scalar"], "a": "Vector"},
+                {"q": "A 2D array is a ___.", "options": ["Matrix", "Tensor", "Vector"], "a": "Matrix"},
+                {"q": "Neural networks use Matrix ___.", "options": ["Multiplication", "Division", "Subtraction"], "a": "Multiplication"},
+                {"q": "The 'shape' of a (3,2) matrix has how many items?", "options": ["6", "5", "3"], "a": "6"},
+                {"q": "Transposing a matrix swaps ___ and columns.", "options": ["Rows", "Data", "Colors"], "a": "Rows"}
+            ]
+        },
+        {
+            "id": "p1_c8", "title": "1.8 How might LLMs store facts", 
+            "url": "https://www.youtube.com/watch?v=9-Jl0dxWQs8", 
+            "goal": "Consolidate intuition-level concepts.",
+            "quiz": [
+                {"q": "ML is about finding ___ in data.", "options": ["Patterns", "Folders", "Hardware"], "a": "Patterns"},
+                {"q": "Architecture + Cost + Optimization = ___.", "options": ["The Model", "The Input", "The GPU"], "a": "The Model"},
+                {"q": "Intuition phase focused on 'How it ___'.", "options": ["Works", "Is Coded", "Is Sold"], "a": "Works"},
+                {"q": "A weights-set is essentially the ___.", "options": ["Knowledge", "Memory", "Speed"], "a": "Knowledge"},
+                {"q": "Are you ready for Phase 2?", "options": ["Yes", "Maybe", "No"], "a": "Yes"}
+            ]
+        }
+    ],
+    "Phase 2: Implementation": [
+        {
+            "id": "p2_v1", "title": "2.1 Setup Environment", "url": "", "goal": "Installing Python, Conda, and VS Code.",
+            "quiz": [
+                {"q": "Most common language for ML?", "options": ["Python", "C++", "HTML"], "a": "Python"},
+                {"q": "What is 'Conda'?", "options": ["Env Manager", "A Compiler", "A Video Player"], "a": "Env Manager"},
+                {"q": "We use ___ to write code.", "options": ["IDE/Editor", "Browser", "Terminal"], "a": "IDE/Editor"},
+                {"q": "PIP is used to install ___.", "options": ["Libraries", "Drivers", "Updates"], "a": "Libraries"},
+                {"q": "A virtual env prevents version ___.", "options": ["Conflicts", "Updates", "Speed"], "a": "Conflicts"}
+            ]
+        },
+        {
+            "id": "p2_v2", "title": "2.2 Tensors & NumPy", "url": "", "goal": "Manipulating data with NumPy.",
+            "quiz": [
+                {"q": "NumPy stands for ___ Python.", "options": ["Numerical", "Number", "New"], "a": "Numerical"},
+                {"q": "Core object in NumPy?", "options": ["ndarray", "list", "dict"], "a": "ndarray"},
+                {"q": "NumPy is faster because it uses ___.", "options": ["Vectorization", "Loops", "Recursion"], "a": "Vectorization"},
+                {"q": "Broadcasting allows math on different ___.", "options": ["Shapes", "Files", "Types"], "a": "Shapes"},
+                {"q": "np.zeros((5)) creates how many zeros?", "options": ["5", "1", "0"], "a": "5"}
+            ]
+        },
+        {
+            "id": "p2_v3", "title": "2.3 Simple Neuron", "url": "", "goal": "Coding a single neuron from scratch.",
+            "quiz": [
+                {"q": "Output = (Weight * Input) + ___.", "options": ["Bias", "Loss", "Cost"], "a": "Bias"},
+                {"q": "What function adds non-linearity?", "options": ["Activation", "Cost", "Step"], "a": "Activation"},
+                {"q": "Dot product is used for ___.", "options": ["Weighted Sum", "Average", "Sorting"], "a": "Weighted Sum"},
+                {"q": "Bias allows the model to ___.", "options": ["Shift", "Scale", "Rotate"], "a": "Shift"},
+                {"q": "A single neuron is a linear ___.", "options": ["Classifier", "Database", "Loop"], "a": "Classifier"}
+            ]
+        },
+        {
+            "id": "p2_v4", "title": "2.4 Intro to PyTorch", "url": "", "goal": "Moving from NumPy to GPU-accelerated Tensors.",
+            "quiz": [
+                {"q": "PyTorch is developed by ___.", "options": ["Meta", "Google", "Microsoft"], "a": "Meta"},
+                {"q": "PyTorch's core feature is Auto___.", "options": ["Grad", "Save", "Fill"], "a": "Grad"},
+                {"q": "Tensors can run on ___ for speed.", "options": ["GPU", "Monitor", "Keyboard"], "a": "GPU"},
+                {"q": "Command to see if GPU is ready?", "options": ["torch.cuda.is_available()", "torch.gpu()", "check.cuda()"], "a": "torch.cuda.is_available()"},
+                {"q": "torch.randn() creates ___ values.", "options": ["Random", "Zero", "One"], "a": "Random"}
+            ]
+        },
+        {
+            "id": "p2_v5", "title": "2.5 Implementation GD", "url": "", "goal": "Coding the optimization loop.",
+            "quiz": [
+                {"q": "Optimizer.step() updates the ___.", "options": ["Parameters", "Data", "Loss"], "a": "Parameters"},
+                {"q": "zero_grad() is used to ___ gradients.", "options": ["Clear", "Double", "Save"], "a": "Clear"},
+                {"q": "The training loop is a 'for' ___.", "options": ["Loop", "String", "Class"], "a": "Loop"},
+                {"q": "One pass through the whole dataset is an ___.", "options": ["Epoch", "Step", "Batch"], "a": "Epoch"},
+                {"q": "Loss.backward() computes ___.", "options": ["Gradients", "Accuracy", "Weights"], "a": "Gradients"}
+            ]
+        },
+        {
+            "id": "p2_v6", "title": "2.6 First Model", "url": "", "goal": "Building a Multi-Layer Perceptron (MLP).",
+            "quiz": [
+                {"q": "nn.Linear represents a ___ layer.", "options": ["Fully Connected", "Convolutional", "Recurrent"], "a": "Fully Connected"},
+                {"q": "nn.Sequential ___ layers together.", "options": ["Stacks", "Deletes", "Multiplies"], "a": "Stacks"},
+                {"q": "The hidden layer size is a ___.", "options": ["Hyperparameter", "Constant", "Input"], "a": "Hyperparameter"},
+                {"q": "Forward method defines the ___ flow.", "options": ["Data", "Error", "Reverse"], "a": "Data"},
+                {"q": "MLP stands for Multi-___ Perceptron.", "options": ["Layer", "Level", "Linear"], "a": "Layer"}
+            ]
+        },
+        {
+            "id": "p2_v7", "title": "2.7 Evaluating Results", "url": "", "goal": "Checking accuracy and validation loss.",
+            "quiz": [
+                {"q": "We split data into Train and ___.", "options": ["Test/Val", "Final", "Backup"], "a": "Test/Val"},
+                {"q": "Overfitting means poor ___.", "options": ["Generalization", "Memory", "Speed"], "a": "Generalization"},
+                {"q": "Validation is done on ___ data.", "options": ["Unseen", "Training", "Old"], "a": "Unseen"},
+                {"q": "Metric for classification?", "options": ["Accuracy", "MSE", "MAE"], "a": "Accuracy"},
+                {"q": "Model.eval() turns off ___.", "options": ["Dropout/Batchnorm", "The GPU", "Weights"], "a": "Dropout/Batchnorm"}
+            ]
+        },
+        {
+            "id": "p2_v8", "title": "2.8 Phase 2 Project", "url": "", "goal": "End-to-end training on a real dataset.",
+            "quiz": [
+                {"q": "First step is Data ___.", "options": ["Preprocessing", "Training", "Deploying"], "a": "Preprocessing"},
+                {"q": "DataLoader helps with ___ processing.", "options": ["Batch", "Single", "Static"], "a": "Batch"},
+                {"q": "A good project needs a ___.", "options": ["Baseline", "GPU", "Virus"], "a": "Baseline"},
+                {"q": "Loss curves should generally go ___.", "options": ["Down", "Up", "Right"], "a": "Down"},
+                {"q": "Project proves ___ mastery.", "options": ["Practical", "Theoretical", "No"], "a": "Practical"}
+            ]
+        }
+    ],
+    "Phase 3: Deep Context": [
+        {
+            "id": "p3_v1", "title": "3.1 Transformers", "url": "", "goal": "Understanding the 'Attention' mechanism.",
+            "quiz": [
+                {"q": "Transformers replaced ___ for NLP.", "options": ["RNNs", "CNNs", "Excel"], "a": "RNNs"},
+                {"q": "Core mechanism is Self-___.", "options": ["Attention", "Correction", "Training"], "a": "Attention"},
+                {"q": "Attention allows model to focus on ___ words.", "options": ["Relevant", "Long", "First"], "a": "Relevant"},
+                {"q": "GPT stands for Generative Pre-trained ___.", "options": ["Transformer", "Tool", "Tensor"], "a": "Transformer"},
+                {"q": "Transformers process data in ___.", "options": ["Parallel", "Series", "Slowly"], "a": "Parallel"}
+            ]
+        },
+        {
+            "id": "p3_v2", "title": "3.2 Training Large Models", "url": "", "goal": "Distributed training and LLM basics.",
+            "quiz": [
+                {"q": "Large models need ___ GPUs.", "options": ["Multiple", "Single", "No"], "a": "Multiple"},
+                {"q": "Fine-tuning uses ___ datasets.", "options": ["Specific", "Random", "Large"], "a": "Specific"},
+                {"q": "RLHF is Learning from Human ___.", "options": ["Feedback", "Files", "Food"], "a": "Feedback"},
+                {"q": "Scaling laws relate data and ___ size.", "options": ["Parameter", "Pixel", "File"], "a": "Parameter"},
+                {"q": "Final step is often Model ___.", "options": ["Deployment", "Deletion", "Drafting"], "a": "Deployment"}
+            ]
+        }
+    ]
+}
