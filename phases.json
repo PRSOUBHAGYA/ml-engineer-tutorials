@@ -97,11 +97,26 @@
                 {"q": "A weights-set is essentially the ___.", "options": ["Knowledge", "Memory", "Speed"], "a": "Knowledge"},
                 {"q": "Are you ready for Phase 2?", "options": ["Yes", "Maybe", "No"], "a": "Yes"}
             ]
+        },
+        {
+            "id": "p1_c9", "title": "Bonus: How do AI images and videos actually work?", 
+            "url": "https://www.youtube.com/watch?v=iv-5mZ_9CPY", 
+            "goal": "Consolidate intuition-level concepts.",
+            "quiz": [
+                {"q": "ML is about finding ___ in data.", "options": ["Patterns", "Folders", "Hardware"], "a": "Patterns"},
+                {"q": "Architecture + Cost + Optimization = ___.", "options": ["The Model", "The Input", "The GPU"], "a": "The Model"},
+                {"q": "Intuition phase focused on 'How it ___'.", "options": ["Works", "Is Coded", "Is Sold"], "a": "Works"},
+                {"q": "A weights-set is essentially the ___.", "options": ["Knowledge", "Memory", "Speed"], "a": "Knowledge"},
+                {"q": "Are you ready for Phase 2?", "options": ["Yes", "Maybe", "No"], "a": "Yes"}
+            ]
         }
+
     ],
     "Phase 2: Implementation": [
         {
-            "id": "p2_v1", "title": "2.1 Setup Environment", "url": "", "goal": "Installing Python, Conda, and VS Code.",
+            "id": "p2_v1", "title": "2.1 Building micrograd", 
+            "url": "https://www.youtube.com/watch?v=VMj-3S1tku0", 
+            "goal": "Installing Python, Conda, and VS Code.",
             "quiz": [
                 {"q": "Most common language for ML?", "options": ["Python", "C++", "HTML"], "a": "Python"},
                 {"q": "What is 'Conda'?", "options": ["Env Manager", "A Compiler", "A Video Player"], "a": "Env Manager"},
@@ -111,7 +126,9 @@
             ]
         },
         {
-            "id": "p2_v2", "title": "2.2 Tensors & NumPy", "url": "", "goal": "Manipulating data with NumPy.",
+            "id": "p2_v2", "title": "2.2 Building makemore", 
+            "url": "https://www.youtube.com/watch?v=PaCmpygFfXo", 
+            "goal": "Manipulating data with NumPy.",
             "quiz": [
                 {"q": "NumPy stands for ___ Python.", "options": ["Numerical", "Number", "New"], "a": "Numerical"},
                 {"q": "Core object in NumPy?", "options": ["ndarray", "list", "dict"], "a": "ndarray"},
@@ -121,7 +138,9 @@
             ]
         },
         {
-            "id": "p2_v3", "title": "2.3 Simple Neuron", "url": "", "goal": "Coding a single neuron from scratch.",
+            "id": "p2_v3", "title": "2.3 Building makemore Part 2: MLP", 
+            "url": "https://www.youtube.com/watch?v=TCH_1BHY58I", 
+            "goal": "Coding a single neuron from scratch.",
             "quiz": [
                 {"q": "Output = (Weight * Input) + ___.", "options": ["Bias", "Loss", "Cost"], "a": "Bias"},
                 {"q": "What function adds non-linearity?", "options": ["Activation", "Cost", "Step"], "a": "Activation"},
@@ -131,7 +150,9 @@
             ]
         },
         {
-            "id": "p2_v4", "title": "2.4 Intro to PyTorch", "url": "", "goal": "Moving from NumPy to GPU-accelerated Tensors.",
+            "id": "p2_v4", "title": "2.4 Building makemore Part 3: Activations & Gradients, BatchNorm", 
+            "url": "https://www.youtube.com/watch?v=P6sfmUTpUmc", 
+            "goal": "Moving from NumPy to GPU-accelerated Tensors.",
             "quiz": [
                 {"q": "PyTorch is developed by ___.", "options": ["Meta", "Google", "Microsoft"], "a": "Meta"},
                 {"q": "PyTorch's core feature is Auto___.", "options": ["Grad", "Save", "Fill"], "a": "Grad"},
@@ -141,7 +162,9 @@
             ]
         },
         {
-            "id": "p2_v5", "title": "2.5 Implementation GD", "url": "", "goal": "Coding the optimization loop.",
+            "id": "p2_v5", "title": "2.5 Building makemore Part 4: Becoming a Backprop Ninja", 
+            "url": "https://www.youtube.com/watch?v=q8SA3rM6ckI", 
+            "goal": "Coding the optimization loop.",
             "quiz": [
                 {"q": "Optimizer.step() updates the ___.", "options": ["Parameters", "Data", "Loss"], "a": "Parameters"},
                 {"q": "zero_grad() is used to ___ gradients.", "options": ["Clear", "Double", "Save"], "a": "Clear"},
@@ -151,7 +174,9 @@
             ]
         },
         {
-            "id": "p2_v6", "title": "2.6 First Model", "url": "", "goal": "Building a Multi-Layer Perceptron (MLP).",
+            "id": "p2_v6", "title": "2.6 Building makemore Part 5: Building a WaveNet", 
+            "url": "https://www.youtube.com/watch?v=t3YJ5hKiMQ0", 
+            "goal": "Building a Multi-Layer Perceptron (MLP).",
             "quiz": [
                 {"q": "nn.Linear represents a ___ layer.", "options": ["Fully Connected", "Convolutional", "Recurrent"], "a": "Fully Connected"},
                 {"q": "nn.Sequential ___ layers together.", "options": ["Stacks", "Deletes", "Multiplies"], "a": "Stacks"},
@@ -161,7 +186,9 @@
             ]
         },
         {
-            "id": "p2_v7", "title": "2.7 Evaluating Results", "url": "", "goal": "Checking accuracy and validation loss.",
+            "id": "p2_v7", "title": "2.7 Let’s build GPT", 
+            "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY", 
+            "goal": "Checking accuracy and validation loss.",
             "quiz": [
                 {"q": "We split data into Train and ___.", "options": ["Test/Val", "Final", "Backup"], "a": "Test/Val"},
                 {"q": "Overfitting means poor ___.", "options": ["Generalization", "Memory", "Speed"], "a": "Generalization"},
@@ -171,7 +198,9 @@
             ]
         },
         {
-            "id": "p2_v8", "title": "2.8 Phase 2 Project", "url": "", "goal": "End-to-end training on a real dataset.",
+            "id": "p2_v8", "title": "2.8 Let’s build the GPT Tokenizer", 
+            "url": "https://www.youtube.com/watch?v=zduSFxRajkE", 
+            "goal": "End-to-end training on a real dataset.",
             "quiz": [
                 {"q": "First step is Data ___.", "options": ["Preprocessing", "Training", "Deploying"], "a": "Preprocessing"},
                 {"q": "DataLoader helps with ___ processing.", "options": ["Batch", "Single", "Static"], "a": "Batch"},
@@ -183,7 +212,9 @@
     ],
     "Phase 3: Deep Context": [
         {
-            "id": "p3_v1", "title": "3.1 Transformers", "url": "", "goal": "Understanding the 'Attention' mechanism.",
+            "id": "p3_v1", "title": "Intro to Large Language Models", 
+            "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g", 
+            "goal": "Understanding the 'Attention' mechanism.",
             "quiz": [
                 {"q": "Transformers replaced ___ for NLP.", "options": ["RNNs", "CNNs", "Excel"], "a": "RNNs"},
                 {"q": "Core mechanism is Self-___.", "options": ["Attention", "Correction", "Training"], "a": "Attention"},
@@ -193,7 +224,9 @@
             ]
         },
         {
-            "id": "p3_v2", "title": "3.2 Training Large Models", "url": "", "goal": "Distributed training and LLM basics.",
+            "id": "p3_v2", "title": "3.2 Deep Dive into LLMs like ChatGPT", 
+            "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI", 
+            "goal": "Distributed training and LLM basics.",
             "quiz": [
                 {"q": "Large models need ___ GPUs.", "options": ["Multiple", "Single", "No"], "a": "Multiple"},
                 {"q": "Fine-tuning uses ___ datasets.", "options": ["Specific", "Random", "Large"], "a": "Specific"},
